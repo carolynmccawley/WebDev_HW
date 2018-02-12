@@ -1,0 +1,156 @@
+
+html,
+body {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.clearfix::after {
+	display: block;
+	clear: both;
+	/*to ensure cross browser and legacy browser compatability*/
+	height:0;
+	font-size: 0;
+	content: '';
+	/*super paranoid mode*/
+	visibility: hidden;
+}
+
+article img{
+	position: relative;
+	border: 20px solid yellow;
+	margin:20px;
+}
+
+
+header h1 {
+  color: #333;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+
+/*Nav Bar*/
+nav {
+  float: right;
+  display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align-center;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffcc;
+}
+
+nav li {
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  text-align: center;
+  transition: all 1s;
+}
+
+nav a:hover {
+  background-color: rgba(40,40,40, 0.5);
+  color: #fff;
+}
+
+
+
+
+/*Recommended Recipes*/
+aside {
+  float: right;
+  margin:0px;
+  margin-top: 50px;
+  border: 10px solid yellow;
+  width: 150px;
+  text-align: center;
+
+  /*display: inline-block;*/
+}
+
+aside ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  margin:0px;
+  background-color: white;
+}
+
+aside li {
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  width: 150px;
+  text-align: center;
+}
+
+aside a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+}
+aside a:hover{
+	background-color:#ffffcc;
+}
+
+
+.BBread {
+	margin:50px;
+	text-align: center;
+}
+
+
+.container{
+	width:800px;
+	margin:auto;
+}
+.container ul {
+	list-style-type: none;
+	text-align: left;
+	padding:15px;
+}
+.container li {
+	line-height:20px;
+}
+.Ingredients{
+	width:300px;
+	float:left;
+	height:300px;
+	border:15px dotted yellow;
+	margin:30px;
+}
+.Directions{
+	width:300px;
+	float:left;
+	height:300px;
+	border:15px dotted yellow;
+	margin:30px;
+}
+
+/*Footer*/
+footer {
+	margin-top: 10px;
+	text-align: center;
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	height: 30px;
+	background: yellow;
+}
+
