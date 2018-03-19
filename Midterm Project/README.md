@@ -6,3 +6,6 @@ Carolyn McCawley
 
 [Link to Midterm Website] (https://carolynmccawley.github.io/HomePage.html)
 
+[Link to Midterm Hosted Website] (https://github.com/carolynmccawley/carolynmccawley.github.io)
+
+
