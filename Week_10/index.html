@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+
+	<script type="text/javascript">
+		function displayNum(n1){
+			calcForm.calcText.value=calcForm.calcText.value+n1;
+		}
+		// Uses javascript's eval (built in function) to evaluate the problems since they are strings
+	</script>
+</body>
+</head>
+<body>
+	<h1>Simple Calculator</h1>
+	<form name="calcForm">
+		<input type="text" name="calcText"> <br> 
+
+		<input type="button" name="numB9" value="9" onclick="displayNum(numB9.value)">
+		<input type="button" name="numB8" value="8" onclick="displayNum(numB8.value)">
+		<input type="button" name="numB7" value="7" onclick="displayNum(numB7.value)">
+		<input type="button" name="multiplyButton" value="*" onclick="displayNum(multiplyButton.value)">
+		<br>
+
+		<input type="button" name="numB6" value="6" onclick="displayNum(numB6.value)">
+		<input type="button" name="numB5" value="5" onclick="displayNum(numB5.value)">
+		<input type="button" name="numB4" value="4" onclick="displayNum(numB4.value)">
+		<input type="button" name="subtractButton" value="-" onclick="displayNum(subtractButton.value)">
+		<br>
+
+		<input type="button" name="numB3" value="3" onclick="displayNum(numB3.value)">
+		<input type="button" name="numB2" value="2" onclick="displayNum(numB2.value)">
+		<input type="button" name="numB1" value="1" onclick="displayNum(numB1.value)">
+		<input type="button" name="addButton" value="+" displayNum(addButton.value)>
+		<br>
+
+		<input type="button" name="numB0" value="0" onclick="displayNum(numB0.value)">
+		<input type="button" name="decButton" value="." onclick="displayNum(decButton.value)">
+		<!-- Eval is a javascript function that takes strings and evaluates the equation given -->
+		<input type="button" name="equal" value="=" onclick="calcText.value=eval(calcText.value)">
+		<input type="button" name="divButton" value="/" onclick="displayNum(divButton.value)"">
+	</form>
+</html>
