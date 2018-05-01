@@ -3,31 +3,38 @@
 html,
 body {
   margin: 0;
-  background-color:pink;
+  background:linear-gradient(white,pink);
   font-family: 'Philosopher', sans-serif;
 }
 
-.navbar a {
+/*Changes the logo (Livre le Lit)*/
+.navbar-light .navbar-brand {
   color:#3498DB;
+  font-size: 40px;
 }
-a.navbar-brand {
-  font-size:40px;
+.navbar-light .navbar-brand:hover {
+  transition: 0.5s ease;
+  color:pink;
+}
+/*Changes the nav bar links*/
+.navbar-light .navbar-nav .nav-link {
+  color: #3498DB;
+  font-size:20px;
 }
 
-a.nav-link {
-  font-size: 20px;
+.navbar-light .navbar-nav .nav-link:hover {
+  transition: 0.5s ease;
+  color:pink;
 }
 
+/*larger next and previous buttons*/
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
         width:4rem;
         height: 4rem;
 }
-/*.navbar-inner {
-    background:none;
-    line-height: : 100px;
-}*/
 
+/*positioning welcome text*/
 .WelcomeText {
   margin-left: 5%;
   margin-right: 5%;
@@ -35,6 +42,7 @@ a.nav-link {
 }
 
 
+/*positioning small dots*/
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -46,6 +54,7 @@ a.nav-link {
   text-align: center;
   list-style: none;
 }
+/*stylizing small dots so that they're pink*/
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -58,9 +67,10 @@ a.nav-link {
   border-radius: 10px;
 }
 
+/*footer is centered and turns black when hovered on*/
 .footer {
   text-align:center;
-  margin-bottom:1%;
+  margin-bottom:0%;
 }
 .footer a {
   text-decoration: none;
@@ -68,4 +78,5 @@ a.nav-link {
 }
 .footer a:hover {
   color:black;
+  transition: 0.3s ease;
 }
